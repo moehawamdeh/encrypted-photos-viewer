@@ -1,6 +1,6 @@
 # Encrypted Image Viewer & Encryptor
 
-This tool provides a simple way to encrypt and decrypt images using AES encryption. 
+This tool provides a simple way to encrypt and decrypt images using AES encryption.
 It consists of two scripts:
 
 1. **encrypt.py** - Encrypts image files in a directory.
@@ -15,6 +15,7 @@ This was built for personal use but can be useful for anyone who wants to keep t
 - Decrypts and displays encrypted images via a GUI.
 - Supports image rotation and resizing.
 - Simple keyboard controls for navigation.
+- Decrypted images are stored in memory and are not written to disk, ensuring security.
 
 ---
 
@@ -79,9 +80,11 @@ Now you can run `encrypt` and `viewer` without needing Python installed.
 - The key must be exactly **16, 24, or 32 bytes** for AES encryption.
 - The encrypted images can only be decrypted with the same key.
 - The viewer only works with `.enc` files produced by `encrypt.py`.
+- Decrypted images are loaded in memory and are not saved to disk, ensuring enhanced security.
 - Make sure to **remember your encryption key**, as decryption is impossible without it.
 
 ---
 
 ## License
 This tool is provided as-is. Feel free to use, modify, and share it!
+
